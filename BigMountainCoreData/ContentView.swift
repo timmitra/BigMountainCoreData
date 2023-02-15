@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+  
+  @FetchRequest(sortDescriptors: []) private var people: FetchedResults<PersonEntity>
+  // Core Data automatically makes your entities conform to Identifiable
+  
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+          List(people) { person in
+            Text(person.name ?? "")
+          }
         }
+        .font(.title)
         .padding()
     }
 }
