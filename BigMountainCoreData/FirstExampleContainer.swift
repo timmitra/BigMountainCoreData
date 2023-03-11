@@ -7,12 +7,12 @@
 
 import CoreData
 
-class FriendsContainer {
+class FirstExampleContainer {
   
   let persistentContainer: NSPersistentContainer
   
   init() {
-    persistentContainer = NSPersistentContainer(name: "FriendsDataModel")
+    persistentContainer = NSPersistentContainer(name: "FirstExample")
     persistentContainer.loadPersistentStores { _, _ in }
   }
 }
