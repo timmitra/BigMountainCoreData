@@ -11,7 +11,7 @@ import SwiftUI
 struct BigMountainCoreDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          PreviewingData_Intro()
             .environment(\.managedObjectContext, FriendsContainer().persistentContainer.viewContext)
         }
     }

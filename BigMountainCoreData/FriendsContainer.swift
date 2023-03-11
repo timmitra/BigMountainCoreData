@@ -20,5 +20,27 @@ class FriendsContainer {
       persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
     }
     persistentContainer.loadPersistentStores { _, _ in }
+    
+    if forPreview {
+      addMockData(moc: persistentContainer.viewContext)
+    }
+  }
+}
+
+extension FriendsContainer {
+  func addMockData(moc: NSManagedObjectContext) {
+    let friend1 = FriendsEntity(context: moc)
+    friend1.firstName = "Chris"
+    friend1.lastName = "Bloom"
+    
+    let friend2 = FriendsEntity(context: moc)
+    friend2.firstName = "Jacqueline"
+    friend2.lastName = "Cruz"
+    
+    let friend3 = FriendsEntity(context: moc)
+    friend3.firstName = "Rodrigo"
+    friend3.lastName = "Jones"
+    
+    try? moc.save()
   }
 }
