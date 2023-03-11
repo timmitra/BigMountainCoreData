@@ -11,11 +11,9 @@
 		2A3FA31129BC5D8300AABE0F /* FriendsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FA31029BC5D8300AABE0F /* FriendsContainer.swift */; };
 		2A3FA31329BC619100AABE0F /* PreviewingData_Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FA31229BC619100AABE0F /* PreviewingData_Intro.swift */; };
 		2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */; };
-		2A648684299CAD1E008D029E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648683299CAD1E008D029E /* ContentView.swift */; };
 		2A648686299CAD20008D029E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648685299CAD20008D029E /* Assets.xcassets */; };
 		2A648689299CAD20008D029E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648688299CAD20008D029E /* Preview Assets.xcassets */; };
 		2A648691299CAD61008D029E /* FirstExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */; };
-		2A648693299CAE39008D029E /* FirstExampleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648692299CAE39008D029E /* FirstExampleContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +23,9 @@
 		2A3FA31229BC619100AABE0F /* PreviewingData_Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewingData_Intro.swift; sourceTree = "<group>"; };
 		2A64867E299CAD1E008D029E /* BigMountainCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigMountainCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMountainCoreDataApp.swift; sourceTree = "<group>"; };
-		2A648683299CAD1E008D029E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A648685299CAD20008D029E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A648688299CAD20008D029E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A648690299CAD61008D029E /* FirstExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstExample.xcdatamodel; sourceTree = "<group>"; };
-		2A648692299CAE39008D029E /* FirstExampleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExampleContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +60,6 @@
 			children = (
 				2A2DE804299CB73800535E30 /* Info.plist */,
 				2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */,
-				2A648683299CAD1E008D029E /* ContentView.swift */,
-				2A648692299CAE39008D029E /* FirstExampleContainer.swift */,
 				2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */,
 				2A648687299CAD20008D029E /* Preview Content */,
 				2A3FA30D29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld */,
@@ -154,10 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A648684299CAD1E008D029E /* ContentView.swift in Sources */,
 				2A3FA31329BC619100AABE0F /* PreviewingData_Intro.swift in Sources */,
 				2A3FA31129BC5D8300AABE0F /* FriendsContainer.swift in Sources */,
-				2A648693299CAE39008D029E /* FirstExampleContainer.swift in Sources */,
 				2A3FA30F29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld in Sources */,
 				2A648691299CAD61008D029E /* FirstExample.xcdatamodeld in Sources */,
 				2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */,
