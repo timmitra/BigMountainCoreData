@@ -12,10 +12,13 @@ class FriendsContainer {
   
   let persistentContainer: NSPersistentContainer
   
-  init() {
+  init(forPreview: Bool = false) {
     persistentContainer = NSPersistentContainer(name: "FriendsDataModel")
     // print the location of the sqlite file
-    print(persistentContainer.persistentStoreDescriptions.first!.url!.absoluteString)
+    // print(persistentContainer.persistentStoreDescriptions.first!.url!.absoluteString)
+    if forPreview {
+      persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+    }
     persistentContainer.loadPersistentStores { _, _ in }
   }
 }
