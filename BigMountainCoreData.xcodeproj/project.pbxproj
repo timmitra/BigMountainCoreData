@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3FA30F29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FA30D29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld */; };
 		2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */; };
 		2A648684299CAD1E008D029E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648683299CAD1E008D029E /* ContentView.swift */; };
 		2A648686299CAD20008D029E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648685299CAD20008D029E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		2A2DE804299CB73800535E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A3FA30E29BC5A0900AABE0F /* FriendsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendsDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2A64867E299CAD1E008D029E /* BigMountainCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigMountainCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMountainCoreDataApp.swift; sourceTree = "<group>"; };
 		2A648683299CAD1E008D029E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				2A648692299CAE39008D029E /* FirstExampleContainer.swift */,
 				2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */,
 				2A648687299CAD20008D029E /* Preview Content */,
+				2A3FA30D29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld */,
 			);
 			path = BigMountainCoreData;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				2A648684299CAD1E008D029E /* ContentView.swift in Sources */,
 				2A648693299CAE39008D029E /* FirstExampleContainer.swift in Sources */,
+				2A3FA30F29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld in Sources */,
 				2A648691299CAD61008D029E /* FirstExample.xcdatamodeld in Sources */,
 				2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */,
 			);
@@ -357,6 +361,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		2A3FA30D29BC5A0900AABE0F /* FriendsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A3FA30E29BC5A0900AABE0F /* FriendsDataModel.xcdatamodel */,
+			);
+			currentVersion = 2A3FA30E29BC5A0900AABE0F /* FriendsDataModel.xcdatamodel */;
+			path = FriendsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
