@@ -10,6 +10,16 @@ import CoreData
 
 class FriendsContainer {
   
+  static var preview: NSManagedObjectContext {
+    get {
+      let persistentContainer = NSPersistentContainer(name: "FriendsDataModel")
+      persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+      persistentContainer.loadPersistentStores { _, _ in }
+      //addMockData(moc: persistentContainer.viewContext)
+      return persistentContainer.viewContext
+    }
+  }
+  
   let persistentContainer: NSPersistentContainer
   
   init(forPreview: Bool = false) {
@@ -23,8 +33,10 @@ class FriendsContainer {
     
     if forPreview {
       addMockData(moc: persistentContainer.viewContext)
+      //FriendsContainer.addMockData(moc: persistentContainer.viewContext)
     }
   }
+  
 }
 
 extension FriendsContainer {
