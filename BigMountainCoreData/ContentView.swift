@@ -9,25 +9,42 @@ import SwiftUI
 
 struct ContentView: View {
   
-  @FetchRequest(sortDescriptors: []) private var people: FetchedResults<PersonEntity>
+  @FetchRequest(sortDescriptors: []) private var books: FetchedResults<BookEntity>
   // Core Data automatically makes your entities conform to Identifiable
-  @Environment(\.managedObjectContext) var moc
   
-    var body: some View {
-        VStack {
-          List(people) { person in
-            Text(person.name ?? "")
+  var body: some View {
+    List(books) { book in
+      VStack(alignment: .leading, spacing: 12) {
+        getImage(imageData: book.cover)
+          .resizable()
+          .scaledToFit()
+        HStack {
+          Text(book.title ?? "")
+            .font(.title2)
+          Spacer()
+          Image(systemName: book.available ? "checkmark" : "xmark")
+          Text(book.lastUpdated?.formatted(date: .numeric, time: .omitted) ?? "N/A")
+          Text("Pages: \(book.pages)")
+          Text((book.price ?? 0) as Decimal, format: .currency(code: "USD"))
+          Link(destination: book.url ?? URL(string: "https://www.bigmountainstudio.com")!) {
+            Text("Learn More")
           }
-Button("Add Person") {
-            let person = PersonEntity(context:  moc)
-            person.name = ["Mark", "Lem", "Chase"].randomElement()
-            try? moc.save()
-          }
+          Text(book.bookId?.uuidString ?? "")
+            .font(.caption2)
         }
-        .font(.title)
-        .padding()
+        .padding(.vertical)
+      }
     }
+  }
+  func getImage(imageData: Data?) -> Image {
+    if let data = imageData, let image = UIImage(data: data) {
+      return Image(uiImage: image)
+    } else {
+      return Image(systemName: "photo.fill")
+    }
+  }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
