@@ -24,7 +24,8 @@ extension BookEntity {
     available ? "checkmark" : "mark"
   }
   var viewLastUpdated: String {
-    return "Last updated: " + (lastUpdated?.formatted(date: .numeric, time: .omitted) ?? "N/A")
+    return "Last updated: " + (lastUpdated?.formatted(date: .numeric,
+                                                      time: .omitted) ?? "N/A")
   }
   var viewPages: String {
     "Pages: \(pages)"

@@ -15,32 +15,24 @@ struct ContentView: View {
   var body: some View {
     List(books) { book in
       VStack(alignment: .leading, spacing: 12) {
-        getImage(imageData: book.cover)
+        Image(uiImage: book.viewCover)
           .resizable()
           .scaledToFit()
         HStack {
-          Text(book.title ?? "")
+          Text(book.viewTitle)
             .font(.title2)
           Spacer()
-          Image(systemName: book.available ? "checkmark" : "xmark")
-          Text(book.lastUpdated?.formatted(date: .numeric, time: .omitted) ?? "N/A")
-          Text("Pages: \(book.pages)")
-          Text((book.price ?? 0) as Decimal, format: .currency(code: "USD"))
-          Link(destination: book.url ?? URL(string: "https://www.bigmountainstudio.com")!) {
+          Image(systemName: book.viewAvailability)
+          Text(book.viewLastUpdated)
+          Text(book.viewPages)
+          Text(book.viewPrice)
+          Link(destination: book.viewUrl) {
             Text("Learn More")
           }
-          Text(book.bookId?.uuidString ?? "")
-            .font(.caption2)
+          Text(book.viewBookId)
         }
         .padding(.vertical)
       }
-    }
-  }
-  func getImage(imageData: Data?) -> Image {
-    if let data = imageData, let image = UIImage(data: data) {
-      return Image(uiImage: image)
-    } else {
-      return Image(systemName: "photo.fill")
     }
   }
 }
