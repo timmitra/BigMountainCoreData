@@ -13,6 +13,8 @@
 		2A648689299CAD20008D029E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648688299CAD20008D029E /* Preview Assets.xcassets */; };
 		2A648691299CAD61008D029E /* FirstExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */; };
 		2A648693299CAE39008D029E /* FirstExampleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648692299CAE39008D029E /* FirstExampleContainer.swift */; };
+		2A7814DB29C028E80049791C /* BooksDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */; };
+		2A7814DD29C02AA80049791C /* BooksDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814DC29C02AA80049791C /* BooksDataContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2A648688299CAD20008D029E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A648690299CAD61008D029E /* FirstExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstExample.xcdatamodel; sourceTree = "<group>"; };
 		2A648692299CAE39008D029E /* FirstExampleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExampleContainer.swift; sourceTree = "<group>"; };
+		2A7814DA29C028E80049791C /* BooksDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BooksDataModel.xcdatamodel; sourceTree = "<group>"; };
+		2A7814DC29C02AA80049791C /* BooksDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDataContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				2A648692299CAE39008D029E /* FirstExampleContainer.swift */,
 				2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */,
 				2A648687299CAD20008D029E /* Preview Content */,
+				2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */,
+				2A7814DC29C02AA80049791C /* BooksDataContainer.swift */,
 			);
 			path = BigMountainCoreData;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7814DB29C028E80049791C /* BooksDataModel.xcdatamodeld in Sources */,
 				2A648684299CAD1E008D029E /* ContentView.swift in Sources */,
+				2A7814DD29C02AA80049791C /* BooksDataContainer.swift in Sources */,
 				2A648693299CAE39008D029E /* FirstExampleContainer.swift in Sources */,
 				2A648691299CAD61008D029E /* FirstExample.xcdatamodeld in Sources */,
 				2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */,
@@ -364,6 +372,16 @@
 			);
 			currentVersion = 2A648690299CAD61008D029E /* FirstExample.xcdatamodel */;
 			path = FirstExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A7814DA29C028E80049791C /* BooksDataModel.xcdatamodel */,
+			);
+			currentVersion = 2A7814DA29C028E80049791C /* BooksDataModel.xcdatamodel */;
+			path = BooksDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
