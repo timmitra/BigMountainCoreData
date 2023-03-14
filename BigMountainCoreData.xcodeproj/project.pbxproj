@@ -62,15 +62,13 @@
 		2A648680299CAD1E008D029E /* BigMountainCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				2A7814E029C037820049791C /* DataModels */,
 				2A2DE804299CB73800535E30 /* Info.plist */,
 				2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */,
 				2A648683299CAD1E008D029E /* ContentView.swift */,
 				2A648692299CAE39008D029E /* FirstExampleContainer.swift */,
 				2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */,
 				2A648687299CAD20008D029E /* Preview Content */,
-				2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */,
-				2A7814DC29C02AA80049791C /* BooksDataContainer.swift */,
-				2A7814DE29C0312D0049791C /* BookEntityExtension.swift */,
 			);
 			path = BigMountainCoreData;
 			sourceTree = "<group>";
@@ -82,6 +80,24 @@
 				2A648688299CAD20008D029E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A7814E029C037820049791C /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A7814E129C037940049791C /* Books */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		2A7814E129C037940049791C /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */,
+				2A7814DC29C02AA80049791C /* BooksDataContainer.swift */,
+				2A7814DE29C0312D0049791C /* BookEntityExtension.swift */,
+			);
+			path = Books;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
