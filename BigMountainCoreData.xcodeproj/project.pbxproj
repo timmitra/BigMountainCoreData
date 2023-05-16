@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A423FB62A1343250055C5D7 /* ParksDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A423FB42A1343250055C5D7 /* ParksDataModel.xcdatamodeld */; };
+		2A423FB82A1343B10055C5D7 /* ParksEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A423FB72A1343B10055C5D7 /* ParksEntityExtension.swift */; };
+		2A423FBA2A1343DE0055C5D7 /* ParksDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A423FB92A1343DE0055C5D7 /* ParksDataContainer.swift */; };
 		2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */; };
 		2A648684299CAD1E008D029E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648683299CAD1E008D029E /* ContentView.swift */; };
 		2A648686299CAD20008D029E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648685299CAD20008D029E /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		2A2DE804299CB73800535E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A423FB52A1343250055C5D7 /* ParksDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParksDataModel.xcdatamodel; sourceTree = "<group>"; };
+		2A423FB72A1343B10055C5D7 /* ParksEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksEntityExtension.swift; sourceTree = "<group>"; };
+		2A423FB92A1343DE0055C5D7 /* ParksDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksDataContainer.swift; sourceTree = "<group>"; };
 		2A64867E299CAD1E008D029E /* BigMountainCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigMountainCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMountainCoreDataApp.swift; sourceTree = "<group>"; };
 		2A648683299CAD1E008D029E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A423FB32A1343020055C5D7 /* Parks */ = {
+			isa = PBXGroup;
+			children = (
+				2A423FB42A1343250055C5D7 /* ParksDataModel.xcdatamodeld */,
+				2A423FB72A1343B10055C5D7 /* ParksEntityExtension.swift */,
+				2A423FB92A1343DE0055C5D7 /* ParksDataContainer.swift */,
+			);
+			path = Parks;
+			sourceTree = "<group>";
+		};
+		2A423FBB2A13441B0055C5D7 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				2A648692299CAE39008D029E /* FirstExampleContainer.swift */,
+				2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
 		2A648675299CAD1E008D029E = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +91,6 @@
 				2A2DE804299CB73800535E30 /* Info.plist */,
 				2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */,
 				2A648683299CAD1E008D029E /* ContentView.swift */,
-				2A648692299CAE39008D029E /* FirstExampleContainer.swift */,
-				2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */,
 				2A648687299CAD20008D029E /* Preview Content */,
 			);
 			path = BigMountainCoreData;
@@ -85,6 +108,8 @@
 		2A7814E029C037820049791C /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				2A423FBB2A13441B0055C5D7 /* First */,
+				2A423FB32A1343020055C5D7 /* Parks */,
 				2A7814E129C037940049791C /* Books */,
 			);
 			path = DataModels;
@@ -176,7 +201,10 @@
 				2A648693299CAE39008D029E /* FirstExampleContainer.swift in Sources */,
 				2A648691299CAD61008D029E /* FirstExample.xcdatamodeld in Sources */,
 				2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */,
+				2A423FB82A1343B10055C5D7 /* ParksEntityExtension.swift in Sources */,
+				2A423FBA2A1343DE0055C5D7 /* ParksDataContainer.swift in Sources */,
 				2A7814DF29C0312D0049791C /* BookEntityExtension.swift in Sources */,
+				2A423FB62A1343250055C5D7 /* ParksDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +413,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		2A423FB42A1343250055C5D7 /* ParksDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A423FB52A1343250055C5D7 /* ParksDataModel.xcdatamodel */,
+			);
+			currentVersion = 2A423FB52A1343250055C5D7 /* ParksDataModel.xcdatamodel */;
+			path = ParksDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		2A64868F299CAD61008D029E /* FirstExample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
