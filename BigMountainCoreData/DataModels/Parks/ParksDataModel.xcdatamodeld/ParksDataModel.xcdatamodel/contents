@@ -7,5 +7,5 @@
         <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="region" optional="YES" attributeType="String"/>
     </entity>
-    <fetchRequest name="FetchRequestForCanada" entity="ParkEntity" predicateString="country == &quot;Canada&quot; AND rating &gt; 10"/>
+    <fetchRequest name="FetchRequestForCanada" entity="ParkEntity" predicateString="NOT (country == &quot;Canada&quot; OR rating &gt; 10)"/>
 </model>
