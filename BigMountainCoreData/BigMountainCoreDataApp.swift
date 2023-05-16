@@ -12,7 +12,7 @@ struct BigMountainCoreDataApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            //.environment(\.managedObjectContext, BooksDataContainer().persistentContainer.viewContext)
+            .environment(\.managedObjectContext, BooksDataContainer().persistentContainer.viewContext)
         }
     }
 }
