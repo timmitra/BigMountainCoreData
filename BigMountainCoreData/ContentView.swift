@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
   
   // shorter version of FetchedResults
-    @FetchRequest<ParkEntity>(sortDescriptors: []) private var parks
+    @FetchRequest<ParkEntity>(sortDescriptors: [SortDescriptor(\ParkEntity.name)]) private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
     var body: some View {
