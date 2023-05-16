@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
   
+    @State private var sortAscending = true
   // shorter version of FetchedResults
     @FetchRequest<ParkEntity>(sortDescriptors: [
-        SortDescriptor(\.country, order: .reverse),
-        SortDescriptor(\.rating, order: .forward)
+        SortDescriptor(\.name)
     ]) private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
@@ -38,6 +38,16 @@ struct ContentView: View {
                 .padding(.vertical, 8)
             }
             .navigationTitle("Parks")
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        sortAscending.toggle()
+                        parks.sortDescriptors = [SortDescriptor(\.name, order: sortAscending ? .forward : .reverse)]
+                    } label: {
+                        Image(systemName: sortAscending ? "line.3.horizontal.decrease.circle" : "line.3.horizontal.decrease.circle.fill")
+                    }
+                }
+            }
         }
     }
 }
