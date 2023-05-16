@@ -10,32 +10,33 @@ import SwiftUI
 struct ContentView: View {
   
   // shorter version of FetchedResults
-  @FetchRequest<BookEntity>(sortDescriptors: []) private var books
+    @FetchRequest<ParkEntity>(sortDescriptors: []) private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
-  var body: some View {
-    List(books) { book in
-      VStack(alignment: .leading, spacing: 12) {
-        Image(uiImage: book.viewCover)
-          .resizable()
-          .scaledToFit()
-        HStack {
-          Text(book.viewTitle)
-            .font(.title2)
-          Spacer()
-          Image(systemName: book.viewAvailability)
-          Text(book.viewLastUpdated)
-          Text(book.viewPages)
-          Text(book.viewPrice)
-          Link(destination: book.viewUrl) {
-            Text("Learn More")
-          }
-          Text(book.viewBookId)
+    var body: some View {
+        NavigationStack {
+            List(parks) { park in
+                HStack {
+                    Image(uiImage: park.viewImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 60)
+                        .cornerRadius(8)
+                    
+                    VStack(alignment: .leading, spacing: 4){
+                        Text(park.viewName)
+                            .font(.title)
+                        Text(park.viewLocation)
+                            .fontWeight(.light)
+                    }
+                    
+                    Spacer()
+                }
+                .padding(.vertical, 8)
+            }
+            .navigationTitle("Parks")
         }
-        .padding(.vertical)
-      }
     }
-  }
 }
 
 
