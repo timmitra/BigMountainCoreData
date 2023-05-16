@@ -12,7 +12,8 @@ struct ContentView: View {
     @State private var searchText = ""
   
   // shorter version of FetchedResults
-    @FetchRequest<ParkEntity>(sortDescriptors: [])
+    @FetchRequest<ParkEntity>(sortDescriptors: [],
+                              animation: .easeOut(duration: 2))
     private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
