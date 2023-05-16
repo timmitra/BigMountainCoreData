@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var justCanada = false
+    @State private var searchText = ""
   
   // shorter version of FetchedResults
     @FetchRequest<ParkEntity>(sortDescriptors: [])
@@ -38,17 +38,10 @@ struct ContentView: View {
                 .padding(.vertical, 8)
             }
             .navigationTitle("Parks")
-            .toolbar {
-                ToolbarItem {
-                    Button {
-                        justCanada.toggle()
-                        parks.nsPredicate = justCanada ? NSPredicate(format: "country == 'Canada'") : nil
-                    } label: {
-                        Image(systemName: justCanada ? "globe.americas.fill" : "globe.americas.fill.fill")
-                    }
-                }
+            .searchable(text: $searchText)
+            .onChange(of: searchText) { text in
+                parks.nsPredicate = text.isEmpty ? nil : NSPredicate(format: "name CONTAINS %@", text)
             }
-
         }
     }
 }
