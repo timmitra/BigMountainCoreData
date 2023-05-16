@@ -11,8 +11,8 @@ struct ContentView: View {
   
   // shorter version of FetchedResults
     @FetchRequest<ParkEntity>(sortDescriptors: [
-        SortDescriptor(\.country),
-        SortDescriptor(\.rating)
+        SortDescriptor(\.country, order: .reverse),
+        SortDescriptor(\.rating, order: .forward)
     ]) private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
