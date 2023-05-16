@@ -11,7 +11,7 @@ struct ContentView: View {
   
   // shorter version of FetchedResults
     @FetchRequest<ParkEntity>(sortDescriptors: [],
-    predicate: NSPredicate(format: "country = %@", "Canada"))
+    predicate: NSPredicate(format: "country == 'United States' AND region == 'Utah'"))
     private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
