@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 //Handle nils and formatting
 
@@ -31,5 +32,18 @@ extension ParkEntity {
     }
     var viewRating: String {
         "\(rating).circle.fill"
+    }
+    
+}
+
+extension ParkEntity {
+    
+    static var firstFive: NSFetchRequest<ParkEntity> {
+        let request = ParkEntity.fetchRequest()
+        
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \ParkEntity.name, ascending: true)]
+        request.fetchLimit = 5
+        
+        return request
     }
 }

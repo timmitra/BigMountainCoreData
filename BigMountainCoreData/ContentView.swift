@@ -12,8 +12,7 @@ struct ContentView: View {
     @State private var searchText = ""
   
   // shorter version of FetchedResults
-    @FetchRequest<ParkEntity>(sortDescriptors: [],
-                              animation: .easeOut(duration: 2))
+    @FetchRequest(fetchRequest: ParkEntity.firstFive)
     private var parks
   // Core Data automatically makes your entities conform to Identifiable
   
@@ -37,6 +36,12 @@ struct ContentView: View {
                     Spacer()
                 }
                 .padding(.vertical, 8)
+            }
+            .safeAreaInset(edge: .bottom) {
+                VStack {
+                    Divider()
+                    Text("Total Parks: \(parks.count)")
+                }
             }
             .navigationTitle("Parks")
             .searchable(text: $searchText)
