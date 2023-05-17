@@ -22,7 +22,6 @@
 		2A7814DB29C028E80049791C /* BooksDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */; };
 		2A7814DD29C02AA80049791C /* BooksDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814DC29C02AA80049791C /* BooksDataContainer.swift */; };
 		2A7814DF29C0312D0049791C /* BookEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814DE29C0312D0049791C /* BookEntityExtension.swift */; };
-		2AC66ABB2A14A2A100415CDA /* Preview Asstes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC66ABA2A14A2A100415CDA /* Preview Asstes.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		2A7814DA29C028E80049791C /* BooksDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BooksDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2A7814DC29C02AA80049791C /* BooksDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDataContainer.swift; sourceTree = "<group>"; };
 		2A7814DE29C0312D0049791C /* BookEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEntityExtension.swift; sourceTree = "<group>"; };
-		2AC66ABA2A14A2A100415CDA /* Preview Asstes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Asstes.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +101,6 @@
 				2A1F7E102A14AA10003AA027 /* FetchRequest_GoingBeyond.swift */,
 				2A1F7E122A14AAF2003AA027 /* FetchRequest_RandomSorting.swift */,
 				2A648687299CAD20008D029E /* Preview Content */,
-				2AC66ABA2A14A2A100415CDA /* Preview Asstes.xcassets */,
 			);
 			path = BigMountainCoreData;
 			sourceTree = "<group>";
@@ -195,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC66ABB2A14A2A100415CDA /* Preview Asstes.xcassets in Resources */,
 				2A648689299CAD20008D029E /* Preview Assets.xcassets in Resources */,
 				2A648686299CAD20008D029E /* Assets.xcassets in Resources */,
 			);
