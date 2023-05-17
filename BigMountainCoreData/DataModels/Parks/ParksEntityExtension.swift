@@ -24,6 +24,9 @@ extension ParkEntity {
     var viewRegion: String {
         region ?? "N/A"
     }
+    ///Be sure to mark any computed property with the @objc attribute for it to function as a section identifier.
+    ///Reference: https://developer.apple.com/documentation/SwiftUI/SectionedFetchRequest
+    @objc
     var viewCountry: String {
         country ?? "N/A"
     }
@@ -34,16 +37,4 @@ extension ParkEntity {
         "\(rating).circle.fill"
     }
     
-}
-
-extension ParkEntity {
-    
-    static var firstFive: NSFetchRequest<ParkEntity> {
-        let request = ParkEntity.fetchRequest()
-        
-        request.sortDescriptors = [NSSortDescriptor(keyPath: \ParkEntity.name, ascending: true)]
-        request.fetchLimit = 5
-        
-        return request
-    }
 }

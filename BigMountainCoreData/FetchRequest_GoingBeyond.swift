@@ -1,34 +1,34 @@
-//
-//  ContentView.swift
-//  BigMountainCoreData
-//
-//  Created by Tim Mitra on 2023-02-15.
-//
+// Copyright © 2022 Big Mountain Studio. All rights reserved. Twitter: @BigMtnStudio
 
 import SwiftUI
 import CoreData
 
+/*
+ This let's you limit the fetch to 5
+ */
+
 extension ParkEntity {
-    
-    static var firstFive1: NSFetchRequest<ParkEntity> {
+    /* BOOK NOTE
+     We're using an NSFetchRequest here.
+     */
+    static var firstFive: NSFetchRequest<ParkEntity> {
         let request = ParkEntity.fetchRequest()
         
         request.sortDescriptors = [NSSortDescriptor(keyPath: \ParkEntity.name, ascending: true)]
+        
         request.fetchLimit = 5
         
         return request
     }
 }
 
-struct ContentView: View {
-    
-    @State private var searchText = ""
-  
-  // shorter version of FetchedResults
+struct FetchRequest_GoingBeyond: View {
+    /* BOOK NOTE
+     Notice you don't have to specify the type here with <ParkEntity> since ParkEntity.firstFive specifies it.
+     */
     @FetchRequest(fetchRequest: ParkEntity.firstFive)
     private var parks
-  // Core Data automatically makes your entities conform to Identifiable
-  
+    
     var body: some View {
         NavigationStack {
             List(parks) { park in
@@ -39,7 +39,7 @@ struct ContentView: View {
                         .frame(height: 60)
                         .cornerRadius(8)
                     
-                    VStack(alignment: .leading, spacing: 4){
+                    VStack(alignment: .leading, spacing: 4) {
                         Text(park.viewName)
                             .font(.title)
                         Text(park.viewLocation)
@@ -55,16 +55,16 @@ struct ContentView: View {
                     Divider()
                     Text("Total Parks: \(parks.count)")
                 }
+                .background(.bar)
             }
             .navigationTitle("Parks")
-       }
+        }
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct FetchRequest_GoingBeyond_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-           // .environment(\.managedObjectContext, ParksDataContainer(forPreview: true).persistentContainer.viewContext)
+        FetchRequest_GoingBeyond()
+         //   .environment(\.managedObjectContext, ParksDataContainer(forPreview: true).persistentContainer.viewContext)
     }
 }
