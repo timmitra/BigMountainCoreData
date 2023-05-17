@@ -13,7 +13,7 @@ class ParksDataContainer {
     let persistentContainer: NSPersistentContainer
     
     init(forPreview: Bool = false) {
-        persistentContainer = NSPersistentContainer(name: "ParksEntity")
+        persistentContainer = NSPersistentContainer(name: "ParkEntity")
         
         if forPreview {
             persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
@@ -21,7 +21,7 @@ class ParksDataContainer {
         persistentContainer.loadPersistentStores { _, _ in }
         
         if forPreview {
-            addMockData(moc: persistentContainer.viewContext)
+            //addMockData(moc: persistentContainer.viewContext)
         }
     }
 }

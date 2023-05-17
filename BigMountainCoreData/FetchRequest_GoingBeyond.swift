@@ -65,6 +65,6 @@ struct FetchRequest_GoingBeyond: View {
 struct FetchRequest_GoingBeyond_Previews: PreviewProvider {
     static var previews: some View {
         FetchRequest_GoingBeyond()
-         //   .environment(\.managedObjectContext, ParksDataContainer(forPreview: true).persistentContainer.viewContext)
+            .environment(\.managedObjectContext, ParksDataContainer(forPreview: true).persistentContainer.viewContext)
     }
 }
