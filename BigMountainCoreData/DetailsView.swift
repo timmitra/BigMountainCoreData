@@ -21,21 +21,16 @@ struct DetailsView: View {
                         .bold()
                         .badge(parksCount)
                         .font(.title2)
-                    Text(parkArray, format: .list(type: .and, width: .standard))
-                        .fixedSize(horizontal: false, vertical: true)
+//                    Text(parkArray, format: .list(type: .and, width: .standard))
+//                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
         }
         .navigationTitle("Details")
         .task {
-            let request = ParkEntity.fetchRequest()
-            
-            if let parks = try? moc.fetch(request) {
-                parksCount = parks.count
-                
-                for park in parks {
-                    parkArray.append(park.viewName)
-                }
+
+            if let count = try? moc.count(for: ParkEntity.fetchRequest()) {
+                parksCount = count
             }
         }
     }
