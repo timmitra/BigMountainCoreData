@@ -13,7 +13,7 @@ class ParksDataContainer {
     let persistentContainer: NSPersistentContainer
     
     init(forPreview: Bool = false) {
-        persistentContainer = NSPersistentContainer(name: "ParkEntity")
+        persistentContainer = NSPersistentContainer(name: "ParksDataModel")
         
         if forPreview {
             persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
