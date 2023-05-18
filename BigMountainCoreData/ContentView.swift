@@ -24,10 +24,8 @@ struct ContentView: View {
     
     @State private var searchText = ""
     
-    @SectionedFetchRequest<String, ParkEntity>(sectionIdentifier: \.viewCountry, sortDescriptors: [SortDescriptor(\.country)])
-  
-    private var parks
-  // Core Data automatically makes your entities conform to Identifiable
+    @SectionedFetchRequest<String?, ParkEntity>(sectionIdentifier: \.country, sortDescriptors: [SortDescriptor(\.country)])
+      private var parks
   
     var body: some View {
         NavigationStack {
@@ -51,12 +49,21 @@ struct ContentView: View {
                         .padding(.vertical, 8)
                     }
                 } header: {
-                    Text(section.id)
+                    Text(section.id!)
                 }
             }
             .headerProminence(.increased)
-            .listStyle(.sidebar)
             .navigationTitle("Parks")
+            .toolbar {
+                ToolbarItem {
+                        Button {
+                            parks.sectionIdentifier = \.region
+                            parks.sortDescriptors = [SortDescriptor(\.region)]
+                        } label: {
+                            Image(systemName: "globe")
+                        }
+                }
+            }
        }
     }
 }
