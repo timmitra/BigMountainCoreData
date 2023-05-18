@@ -15,15 +15,18 @@ struct DetailsView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Parks")
-                    .bold()
-                    .badge(parksCount)
-                    .font(.title2)
-                Text(parkArray, format: .list(type: .and, width: .standard))
-                    .fixedSize(horizontal: false, vertical: true)
+            List {
+                VStack {
+                    Text("Parks")
+                        .bold()
+                        .badge(parksCount)
+                        .font(.title2)
+                    Text(parkArray, format: .list(type: .and, width: .standard))
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
         }
+        .navigationTitle("Details")
         .task {
             let request = ParkEntity.fetchRequest()
             
@@ -35,12 +38,12 @@ struct DetailsView: View {
                 }
             }
         }
-        .navigationTitle("Details")
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
         DetailsView()
+            .environment(\.managedObjectContext, ParksDataContainer(forPreview: true).persistentContainer.viewContext)
     }
 }
