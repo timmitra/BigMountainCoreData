@@ -17,14 +17,23 @@ struct DetailsView: View {
         NavigationStack {
             List {
                 VStack {
-                    Text("Parks")
+                    Text("Parks in the United States")
                         .badge(parksCount)
                         .font(.title2)
+                    Text(parkArray, format: .list(type: .and, width: .standard))
                 }
             }
             .task {
-                if let count = try? moc.count(for: ParkEntity.fetchRequest()) {
-                    parksCount = count
+                let request = ParkEntity.fetchRequest()
+                request.predicate = NSPredicate(format: "country CONTAINS %@", "States")
+                request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+                
+                if let parks = try? moc.fetch(request) {
+                    parksCount = parks.count
+                    
+                    for park in parks {
+                        parkArray.append(park.viewName)
+                    }
                 }
             }
             .navigationTitle("Details")
