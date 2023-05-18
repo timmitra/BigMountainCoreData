@@ -55,6 +55,7 @@ struct ContentView: View {
                 }
             }
             .headerProminence(.increased)
+            .listStyle(.sidebar)
             .navigationTitle("Parks")
        }
     }
