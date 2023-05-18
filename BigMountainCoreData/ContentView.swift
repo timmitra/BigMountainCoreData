@@ -24,7 +24,7 @@ struct ContentView: View {
     
     @State private var searchText = ""
     
-    @SectionedFetchRequest<String?, ParkEntity>(sectionIdentifier: \.country, sortDescriptors: [SortDescriptor(\.country)])
+    @SectionedFetchRequest<String, ParkEntity>(sectionIdentifier: \.viewCountry, sortDescriptors: [SortDescriptor(\.country)])
   
     private var parks
   // Core Data automatically makes your entities conform to Identifiable
@@ -51,7 +51,7 @@ struct ContentView: View {
                         .padding(.vertical, 8)
                     }
                 } header: {
-                    Text(section.id!)
+                    Text(section.id)
                 }
             }
             .headerProminence(.increased)
