@@ -21,7 +21,7 @@ class ParksDataContainer {
         persistentContainer.loadPersistentStores { _, _ in }
         
         if forPreview {
-            //addMockData(moc: persistentContainer.viewContext)
+            addMockData(moc: persistentContainer.viewContext)
         }
     }
 }
