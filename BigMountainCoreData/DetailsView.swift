@@ -18,20 +18,16 @@ struct DetailsView: View {
             List {
                 VStack {
                     Text("Parks")
-                        .bold()
                         .badge(parksCount)
                         .font(.title2)
-//                    Text(parkArray, format: .list(type: .and, width: .standard))
-//                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
-        }
-        .navigationTitle("Details")
-        .task {
-
-            if let count = try? moc.count(for: ParkEntity.fetchRequest()) {
-                parksCount = count
+            .task {
+                if let count = try? moc.count(for: ParkEntity.fetchRequest()) {
+                    parksCount = count
+                }
             }
+            .navigationTitle("Details")
         }
     }
 }
