@@ -12,7 +12,7 @@ class BooksDataContainer {
   let persistentContainer: NSPersistentContainer
   
   init() {
-    persistentContainer = NSPersistentContainer(name: "BooksEntity")
+    persistentContainer = NSPersistentContainer(name: "BooksDataModel")
     persistentContainer.loadPersistentStores { _, _ in }
   }
 }
