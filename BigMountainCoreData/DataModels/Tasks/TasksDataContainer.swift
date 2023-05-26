@@ -10,9 +10,9 @@ import CoreData
 
 class TasksDataContainer {
     
-    let persistentContaner: NSPersistentContainer
+    let persistentContainer: NSPersistentContainer
     
     init(forPreview: Bool = false) {
-        persistentContaner = NSPersistentContainer(name: "TasksDataModel")
+        persistentContainer = NSPersistentContainer(name: "TasksDataModel")
     }
 }
