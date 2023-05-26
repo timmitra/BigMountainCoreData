@@ -34,7 +34,7 @@ struct MOC_Delete: View {
 
 struct MOC_Delete_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MOC_Delete()
             .environment(\.managedObjectContext, TasksDataContainer(forPreview: true).persistentContainer.viewContext)
     }
 }
