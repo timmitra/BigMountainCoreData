@@ -11,8 +11,8 @@ import SwiftUI
 struct BigMountainCoreDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            .environment(\.managedObjectContext, ParksDataContainer().persistentContainer.viewContext)
+            MOC_Delete()
+            .environment(\.managedObjectContext, TasksDataContainer().persistentContainer.viewContext)
         }
     }
 }
