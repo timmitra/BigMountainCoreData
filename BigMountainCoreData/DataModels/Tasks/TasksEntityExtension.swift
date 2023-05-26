@@ -9,7 +9,7 @@ import CoreData
 import SwiftUI
 
 // Handle nils and formatting
-extension TasksEntity {
+extension TaskEntity {
     var viewTaskName: String {
         taskName ?? "[Enter Task Name]"
     }
