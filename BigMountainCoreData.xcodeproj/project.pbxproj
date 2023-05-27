@@ -18,6 +18,8 @@
 		2A5EC6122A2075C8000780F7 /* TasksDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EC6112A2075C8000780F7 /* TasksDataContainer.swift */; };
 		2A5EC6142A2078A6000780F7 /* MOC_Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EC6132A2078A6000780F7 /* MOC_Delete.swift */; };
 		2A5EC6162A20815F000780F7 /* MOC_Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EC6152A20815F000780F7 /* MOC_Update.swift */; };
+		2A5EC6182A21C11E000780F7 /* MOC_UpdateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EC6172A21C11E000780F7 /* MOC_UpdateTask.swift */; };
+		2A5EC61A2A21C31C000780F7 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EC6192A21C31C000780F7 /* EditTaskView.swift */; };
 		2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */; };
 		2A648684299CAD1E008D029E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A648683299CAD1E008D029E /* ContentView.swift */; };
 		2A648686299CAD20008D029E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648685299CAD20008D029E /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		2A5EC6112A2075C8000780F7 /* TasksDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataContainer.swift; sourceTree = "<group>"; };
 		2A5EC6132A2078A6000780F7 /* MOC_Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOC_Delete.swift; sourceTree = "<group>"; };
 		2A5EC6152A20815F000780F7 /* MOC_Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOC_Update.swift; sourceTree = "<group>"; };
+		2A5EC6172A21C11E000780F7 /* MOC_UpdateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOC_UpdateTask.swift; sourceTree = "<group>"; };
+		2A5EC6192A21C31C000780F7 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 		2A64867E299CAD1E008D029E /* BigMountainCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigMountainCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMountainCoreDataApp.swift; sourceTree = "<group>"; };
 		2A648683299CAD1E008D029E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				2A648687299CAD20008D029E /* Preview Content */,
 				2A5EC6132A2078A6000780F7 /* MOC_Delete.swift */,
 				2A5EC6152A20815F000780F7 /* MOC_Update.swift */,
+				2A5EC6172A21C11E000780F7 /* MOC_UpdateTask.swift */,
+				2A5EC6192A21C31C000780F7 /* EditTaskView.swift */,
 			);
 			path = BigMountainCoreData;
 			sourceTree = "<group>";
@@ -222,6 +228,8 @@
 				2A7814DD29C02AA80049791C /* BooksDataContainer.swift in Sources */,
 				2A1F7E112A14AA10003AA027 /* FetchRequest_GoingBeyond.swift in Sources */,
 				2A648682299CAD1E008D029E /* BigMountainCoreDataApp.swift in Sources */,
+				2A5EC61A2A21C31C000780F7 /* EditTaskView.swift in Sources */,
+				2A5EC6182A21C11E000780F7 /* MOC_UpdateTask.swift in Sources */,
 				2A423FDD2A149B1D0055C5D7 /* DetailsView.swift in Sources */,
 				2A423FB82A1343B10055C5D7 /* ParksEntityExtension.swift in Sources */,
 				2A5EC6142A2078A6000780F7 /* MOC_Delete.swift in Sources */,
