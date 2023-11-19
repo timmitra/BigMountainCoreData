@@ -26,6 +26,8 @@
 		2A648689299CAD20008D029E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A648688299CAD20008D029E /* Preview Assets.xcassets */; };
 		2A6A4F422B09C3C400606916 /* AutosDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A4F402B09C3C400606916 /* AutosDataModel.xcdatamodeld */; };
 		2A6A4F442B09C53100606916 /* AutosDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A4F432B09C53100606916 /* AutosDataContainer.swift */; };
+		2A6A4F472B09C7CC00606916 /* Relationships_ParentChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A4F462B09C7CC00606916 /* Relationships_ParentChild.swift */; };
+		2A6A4F492B09CA1100606916 /* AutosExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A4F482B09CA1100606916 /* AutosExtension.swift */; };
 		2A7814DB29C028E80049791C /* BooksDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814D929C028E80049791C /* BooksDataModel.xcdatamodeld */; };
 		2A7814DD29C02AA80049791C /* BooksDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814DC29C02AA80049791C /* BooksDataContainer.swift */; };
 		2A7814DF29C0312D0049791C /* BookEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7814DE29C0312D0049791C /* BookEntityExtension.swift */; };
@@ -53,6 +55,8 @@
 		2A648688299CAD20008D029E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A6A4F412B09C3C400606916 /* AutosDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutosDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2A6A4F432B09C53100606916 /* AutosDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutosDataContainer.swift; sourceTree = "<group>"; };
+		2A6A4F462B09C7CC00606916 /* Relationships_ParentChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationships_ParentChild.swift; sourceTree = "<group>"; };
+		2A6A4F482B09CA1100606916 /* AutosExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutosExtension.swift; sourceTree = "<group>"; };
 		2A7814DA29C028E80049791C /* BooksDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BooksDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2A7814DC29C02AA80049791C /* BooksDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDataContainer.swift; sourceTree = "<group>"; };
 		2A7814DE29C0312D0049791C /* BookEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEntityExtension.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				2A2DE804299CB73800535E30 /* Info.plist */,
 				2A648681299CAD1E008D029E /* BigMountainCoreDataApp.swift */,
 				2A648683299CAD1E008D029E /* ContentView.swift */,
+				2A6A4F462B09C7CC00606916 /* Relationships_ParentChild.swift */,
 				2A423FDC2A149B1D0055C5D7 /* DetailsView.swift */,
 				2A1F7E102A14AA10003AA027 /* FetchRequest_GoingBeyond.swift */,
 				2A1F7E122A14AAF2003AA027 /* FetchRequest_RandomSorting.swift */,
@@ -138,6 +143,7 @@
 			children = (
 				2A6A4F402B09C3C400606916 /* AutosDataModel.xcdatamodeld */,
 				2A6A4F432B09C53100606916 /* AutosDataContainer.swift */,
+				2A6A4F482B09CA1100606916 /* AutosExtension.swift */,
 			);
 			path = Autos;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6A4F472B09C7CC00606916 /* Relationships_ParentChild.swift in Sources */,
 				2A7814DB29C028E80049791C /* BooksDataModel.xcdatamodeld in Sources */,
 				2A33711F2A15B200002CF26A /* ParksDataModel.xcdatamodeld in Sources */,
 				2A5EC6102A207592000780F7 /* TasksEntityExtension.swift in Sources */,
@@ -250,6 +257,7 @@
 				2A423FB82A1343B10055C5D7 /* ParksEntityExtension.swift in Sources */,
 				2A5EC6142A2078A6000780F7 /* MOC_Delete.swift in Sources */,
 				2A5EC6162A20815F000780F7 /* MOC_Update.swift in Sources */,
+				2A6A4F492B09CA1100606916 /* AutosExtension.swift in Sources */,
 				2A423FBA2A1343DE0055C5D7 /* ParksDataContainer.swift in Sources */,
 				2A5EC6122A2075C8000780F7 /* TasksDataContainer.swift in Sources */,
 				2A7814DF29C0312D0049791C /* BookEntityExtension.swift in Sources */,
