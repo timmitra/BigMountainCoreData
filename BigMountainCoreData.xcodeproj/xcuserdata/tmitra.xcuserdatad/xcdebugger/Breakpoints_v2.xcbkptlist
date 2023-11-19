@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "028262CC-0AC6-4575-ACDA-BC84F3C6EAF0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B07766E-B6A7-4B94-A242-9DD6C1D68007"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BigMountainCoreData/DataModels/Books/BooksDataContainer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "BooksDataContainer"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5B07766E-B6A7-4B94-A242-9DD6C1D68007 - bac9296a4986d96d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of BigMountainCoreData.BooksDataContainer.init(forPreview: Swift.Bool) -&gt; BigMountainCoreData.BooksDataContainer"
+                  moduleName = "BigMountainCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tmitra/Documents/dev/Xcode%2014/BigMountainCoreData/BigMountainCoreData/DataModels/Books/BooksDataContainer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "5B07766E-B6A7-4B94-A242-9DD6C1D68007 - e9454b50322e4558"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BigMountainCoreData.BooksDataContainer.__allocating_init(forPreview: Swift.Bool) -&gt; BigMountainCoreData.BooksDataContainer"
+                  moduleName = "BigMountainCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tmitra/Documents/dev/Xcode%2014/BigMountainCoreData/BigMountainCoreData/DataModels/Books/BooksDataContainer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5B07766E-B6A7-4B94-A242-9DD6C1D68007 - 67f64b39e382408e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BigMountainCoreData.BooksDataContainer.init(forPreview: Swift.Bool) -&gt; BigMountainCoreData.BooksDataContainer"
+                  moduleName = "BigMountainCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tmitra/Documents/dev/Xcode%2014/BigMountainCoreData/BigMountainCoreData/DataModels/Books/BooksDataContainer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
