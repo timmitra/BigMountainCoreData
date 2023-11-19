@@ -11,6 +11,7 @@ import CoreData
 struct Relationships_ParentChild: View {
   @FetchRequest<ManufacturerEntity>(sortDescriptors: [])
   private var manufacturers
+  @State private var newManufacturer = false
   
     var body: some View {
       NavigationStack {
@@ -24,10 +25,23 @@ struct Relationships_ParentChild: View {
         })
         }
         .navigationTitle("Parent-Child")
+//        .toolbar {
+//          ToolbarItem {
+//            Button {
+//              newManufacturer.toggle()
+//            } label: {
+//              Image(systemName: "plus")
+//            }
+//          }
+//        }
+//        .sheet(isPresented: $newManufacturer) {
+//          NewManufacturer().presentationDetents([.medium])
+//        }
       }
     }
 }
 
 #Preview {
     Relationships_ParentChild()
+    .environment(\.managedObjectContext, AutosDataContainer(forPreview: true).persistentContainer.viewContext)
 }

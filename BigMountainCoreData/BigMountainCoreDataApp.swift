@@ -11,7 +11,7 @@ import SwiftUI
 struct BigMountainCoreDataApp: App {
     var body: some Scene {
         WindowGroup {
-            Relationships_ParentChild()
+            Relationships_InsertingChildren()
             .environment(\.managedObjectContext, AutosDataContainer().persistentContainer.viewContext)
         }
     }
